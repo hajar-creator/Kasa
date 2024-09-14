@@ -3,4 +3,14 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
+  margin: 45px 100px 0;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+li {
+  font-size: 24px;
 }
