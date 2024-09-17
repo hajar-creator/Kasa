@@ -1,13 +1,19 @@
+import Home from "./pages/Home.js";
+import About from "./pages/About.js";
 import Navbar from "./components/Navbar.js";
-import Banner from "./components/Banner.js";
-import MainCards from "./components/MainCards.js";
 import Footer from "./components/Footer.js";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <Navbar /> <Banner /> <MainCards /> <Footer />
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
