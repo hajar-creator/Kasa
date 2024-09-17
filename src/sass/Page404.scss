@@ -1,0 +1,20 @@
+.error {
+  text-align: center;
+  color: #ff6060;
+  &__title {
+    font-weight: 700;
+    font-size: 288px;
+    margin: 120px;
+  }
+  &__sub {
+    font-weight: 500;
+    margin-bottom: 120px;
+    font-size: 36px;
+  }
+  &__link {
+    color: black;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-bottom: 100px;
+  }
+}
