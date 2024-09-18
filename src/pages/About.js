@@ -1,7 +1,11 @@
 import AboutBanner from "../components/AboutBanner";
 
 function About() {
-  return <AboutBanner />;
+  return (
+    <div>
+      <AboutBanner />;
+    </div>
+  );
 }
 
 export default About;

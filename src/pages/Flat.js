@@ -1,5 +1,6 @@
+import FlatContent from "../components/FlatContent";
 function Flat() {
-  return <h1>This contains the flat info</h1>;
+  return <FlatContent />;
 }
 
 export default Flat;
