@@ -1,0 +1,13 @@
+.flatContent {
+  margin: 50px 100px;
+  &__info {
+    &--text h1 {
+      font-weight: 500;
+      font-size: 36px;
+      color: #ff6060;
+    }
+    &--text p {
+      font-size: 18px;
+    }
+  }
+}

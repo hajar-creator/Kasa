@@ -1,0 +1,28 @@
+.carrousel {
+  position: relative;
+  &__counter {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    color: white;
+    font-weight: 500;
+  }
+  &__img {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  &__left {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    left: 20px;
+  }
+  &__right {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    right: 20px;
+  }
+}
