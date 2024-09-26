@@ -1,0 +1,19 @@
+.host {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  &__name {
+    font-weight: 500;
+    color: #ff6060;
+    font-size: 18px;
+    width: 93px;
+    text-align: right;
+  }
+  &__img {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+  }
+}

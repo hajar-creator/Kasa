@@ -3,7 +3,8 @@ import data from "../data.json";
 import Carrousel from "./Carrousel";
 import "../sass/FlatContent.scss";
 import Tags from "./Tags";
-
+import Host from "./Host";
+import Collapse from "./Collapse";
 function FlatContent() {
   const { id } = useParams();
   const flat = data.find((flat) => flat.id === id);
@@ -21,8 +22,12 @@ function FlatContent() {
           <p>{flat.location}</p>
           <Tags tags={flat.tags} />
         </div>
-        <div className="flatContent__info--host"></div>
+        <div className="flatContent__info--host">
+          <Host host={flat.host} />
+        </div>
       </div>
+      <Collapse title="Description" data={flat.description} />
+      <Collapse title="Equipement" data={flat.description} />
     </div>
   );
 }
