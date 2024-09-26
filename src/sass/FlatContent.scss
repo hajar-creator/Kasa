@@ -1,13 +1,17 @@
 .flatContent {
   margin: 50px 100px;
   &__info {
+    display: flex;
+    justify-content: space-between;
     &--text h1 {
       font-weight: 500;
       font-size: 36px;
       color: #ff6060;
+      margin-bottom: 0px;
     }
     &--text p {
       font-size: 18px;
+      font-weight: 500;
     }
   }
 }

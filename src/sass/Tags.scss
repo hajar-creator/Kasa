@@ -1,0 +1,15 @@
+.tags {
+  display: flex;
+  gap: 15px;
+  & span {
+    background-color: #ff6060;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

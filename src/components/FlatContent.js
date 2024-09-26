@@ -2,6 +2,7 @@ import { useParams, NavLink } from "react-router-dom";
 import data from "../data.json";
 import Carrousel from "./Carrousel";
 import "../sass/FlatContent.scss";
+import Tags from "./Tags";
 
 function FlatContent() {
   const { id } = useParams();
@@ -18,8 +19,9 @@ function FlatContent() {
         <div className="flatContent__info--text">
           <h1>{flat.title}</h1>
           <p>{flat.location}</p>
+          <Tags tags={flat.tags} />
         </div>
-        <div className="flatContent__info--rating"></div>
+        <div className="flatContent__info--host"></div>
       </div>
     </div>
   );
