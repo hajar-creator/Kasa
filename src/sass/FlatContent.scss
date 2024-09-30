@@ -28,3 +28,46 @@
     }
   }
 }
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .flatContent {
+    margin: 30px 50px 20px 50px;
+  }
+}
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .flatContent {
+    margin: 20px;
+    &__info {
+      flex-direction: column;
+      &--text {
+        width: 100%;
+        margin-top: 5px;
+      }
+      &--text h1 {
+        font-size: 18px;
+        margin: 0;
+        width: 100%;
+      }
+      &--text p {
+        font-size: 14px;
+        margin: 5px 0px 10px 0;
+      }
+      &--host {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        &--name {
+          font-size: 12px;
+        }
+      }
+      &--collapse {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  }
+}

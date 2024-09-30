@@ -9,3 +9,10 @@
     color: #e3e3e3;
   }
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .fa-solid {
+    font-size: 14px;
+  }
+}

@@ -26,3 +26,21 @@
     left: 20px;
   }
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .carrousel {
+    &__counter {
+      font-size: 14px;
+    }
+    &__img {
+      height: 255px;
+      border-radius: 10px;
+    }
+    &__left,
+    &__right {
+      height: 19.8px;
+      width: 11.67px;
+    }
+  }
+}

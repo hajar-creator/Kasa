@@ -17,3 +17,16 @@
     width: 64px;
   }
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .host {
+    &__name {
+      font-size: 12px;
+    }
+    &__img {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}

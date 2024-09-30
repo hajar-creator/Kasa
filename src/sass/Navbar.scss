@@ -22,3 +22,27 @@ ul {
 li {
   font-size: 24px;
 }
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .navbar {
+    margin: 30px 50px 20px 50px;
+  }
+}
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    margin: 20px;
+    &__logo img {
+      width: 145px;
+      height: 46.88px;
+    }
+  }
+  ul {
+    text-transform: uppercase;
+    gap: 20px;
+  }
+  li {
+    font-size: 12px;
+  }
+}

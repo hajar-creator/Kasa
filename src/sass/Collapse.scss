@@ -70,3 +70,29 @@
     font-size: 18px;
   }
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .collapse-container.closed {
+    height: 30px;
+  }
+  .collapse-header {
+    height: 30px;
+  }
+  .collapse-title {
+    font-size: 13px;
+  }
+  .collapse-icon img {
+    height: 9.14px;
+    width: 16px;
+  }
+  .collapse-content {
+    font-size: 13px;
+    padding: 23px 15px 13px 15px;
+  }
+  .equipements {
+    & li {
+      font-size: 13px;
+    }
+  }
+}

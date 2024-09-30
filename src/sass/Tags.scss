@@ -14,3 +14,15 @@
     justify-content: center;
   }
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .tags {
+    gap: 12px;
+    & span {
+      font-size: 10px;
+      padding: 2px 18px;
+      border-radius: 5px;
+    }
+  }
+}

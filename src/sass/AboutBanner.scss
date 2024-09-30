@@ -7,3 +7,12 @@
   margin: 55px 100px 0;
   border-radius: 25px;
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .aboutbanner {
+    margin: 20px;
+    height: 111px;
+    border-radius: 10px;
+  }
+}

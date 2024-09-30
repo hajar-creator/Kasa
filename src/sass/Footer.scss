@@ -16,3 +16,19 @@
     margin: 26px 0;
   }
 }
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .footer {
+    &__logo {
+      width: 122px;
+      height: 39.44px;
+    }
+    &__text {
+      font-size: 12px;
+      width: 120px;
+      text-align: center;
+      margin: 10px 0px 40px 0px;
+    }
+  }
+}
