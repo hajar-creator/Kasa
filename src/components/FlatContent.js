@@ -5,6 +5,8 @@ import "../sass/FlatContent.scss";
 import Tags from "./Tags";
 import Host from "./Host";
 import Collapse from "./Collapse";
+import Stars from "./Stars";
+
 function FlatContent() {
   const { id } = useParams();
   const flat = data.find((flat) => flat.id === id);
@@ -24,6 +26,7 @@ function FlatContent() {
         </div>
         <div className="flatContent__info--host">
           <Host host={flat.host} />
+          <Stars count={flat.rating} />
         </div>
       </div>
       <div className="flatContent__info--collapse">

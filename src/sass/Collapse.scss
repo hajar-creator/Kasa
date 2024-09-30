@@ -1,3 +1,6 @@
+.collapse {
+  width: 100%;
+}
 .collapse-container {
   background-color: #fff;
   border-radius: 5px;
@@ -19,13 +22,16 @@
   color: white;
   display: flex;
   align-items: center;
-  padding: 16px;
+  border-radius: 5px;
+  padding: 0px 20px 0px 10px;
+  height: 52px;
   cursor: pointer;
 }
 
 .collapse-title {
   margin: 0;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .collapse-icon {
@@ -34,9 +40,32 @@
   /* Add styles for the arrow icon if needed */
   width: 24px; /* Adjust as needed */
   height: 24px; /* Adjust as needed */
+  & img {
+    height: 13.71px;
+    width: 24px;
+  }
 }
 
 .collapse-content {
-  padding: 16px;
+  padding: 26px 30px 16px 30px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  margin-top: -10px;
   background-color: #f6f6f6;
+  font-size: 18px;
+}
+
+.equipements {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+  text-transform: unset;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 0px;
+  margin: 0;
+
+  & li {
+    font-size: 18px;
+  }
 }

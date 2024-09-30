@@ -1,0 +1,11 @@
+.fa-solid {
+  font-size: 18px;
+  margin-right: 10px;
+
+  &.filled {
+    color: #ff6060;
+  }
+  &.empty {
+    color: #e3e3e3;
+  }
+}
