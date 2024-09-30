@@ -16,6 +16,7 @@
       margin: 5px 0px 20px 0px;
     }
     &--host {
+      white-space: nowrap;
       text-align: right;
       display: flex;
       flex-direction: column;
@@ -33,6 +34,11 @@
 @media (max-width: 1024px) and (min-width: 768px) {
   .flatContent {
     margin: 30px 50px 20px 50px;
+    &__info {
+      &--collapse {
+        gap: 50px;
+      }
+    }
   }
 }
 /* Small devices (phones, less than 768px) */

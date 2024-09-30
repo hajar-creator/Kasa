@@ -1,4 +1,4 @@
-import { useParams, NavLink } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import data from "../data.json";
 import Carrousel from "./Carrousel";
 import "../sass/FlatContent.scss";
@@ -12,7 +12,8 @@ function FlatContent() {
   const flat = data.find((flat) => flat.id === id);
 
   if (!flat) {
-    return <NavLink to="*"></NavLink>;
+    console.log(flat);
+    return <Navigate to="*" />;
   }
   return (
     <div className="flatContent">

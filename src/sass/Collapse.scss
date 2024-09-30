@@ -65,7 +65,7 @@
   font-weight: 400;
   padding: 10px 0px;
   margin: 0;
-
+  gap: 35px;
   & li {
     font-size: 18px;
   }
@@ -91,6 +91,7 @@
     padding: 23px 15px 13px 15px;
   }
   .equipements {
+    gap: 20px;
     & li {
       font-size: 13px;
     }
