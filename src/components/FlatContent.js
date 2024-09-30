@@ -26,8 +26,10 @@ function FlatContent() {
           <Host host={flat.host} />
         </div>
       </div>
-      <Collapse title="Description" data={flat.description} />
-      <Collapse title="Equipement" data={flat.description} />
+      <div className="flatContent__info--collapse">
+        <Collapse data={{ title: "Description", content: flat.description }} />
+        <Collapse data={{ title: "Équipements", content: flat.equipments }} />
+      </div>
     </div>
   );
 }

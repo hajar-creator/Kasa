@@ -8,7 +8,7 @@ const Collapse = ({ data }) => {
     setIsOpen(!isOpen);
   };
   return (
-    <main className="collapseAbout">
+    <div className="collapse">
       <div className={`collapse-container ${isOpen ? "open" : "closed"}`}>
         <div className="collapse-header" onClick={toggleCollapse}>
           <h3 className="collapse-title">{data.title}</h3>
@@ -19,9 +19,19 @@ const Collapse = ({ data }) => {
             <img src={arrowIcon} alt="Arrow Icon" />
           </span>
         </div>
-        <div className="collapse-content">{data.content}</div>
+        <div className="collapse-content">
+          {data.title === "Équipements" ? (
+            <ul className="equipements">
+              {data.content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            data.content
+          )}
+        </div>
       </div>
-    </main>
+    </div>
   );
 };
 export default Collapse;

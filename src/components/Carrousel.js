@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../sass/Carrousel.scss";
-import arrow_right from "../assets/arrow_right.png";
-import arrow_left from "../assets/arrow_left.png";
+import arrow_right from "../assets/arrow__right.png";
+import arrow_left from "../assets/arrow__left.png";
 
 function Carrousel({ carrouselImgs }) {
   const [currentSlide, setCurrentSlide] = useState(0);

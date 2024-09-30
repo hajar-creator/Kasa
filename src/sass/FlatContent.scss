@@ -13,5 +13,13 @@
       font-size: 18px;
       font-weight: 500;
     }
+    &--collapse {
+      display: flex;
+      justify-content: space-between;
+      gap: 65px;
+    }
+    &--collapse div {
+      width: 100%;
+    }
   }
 }
