@@ -1,13 +1,14 @@
 .tags {
   display: flex;
   gap: 15px;
+  margin-bottom: 5px;
   & span {
     background-color: #ff6060;
     color: white;
     border-radius: 10px;
     font-weight: 600;
     font-size: 14px;
-    padding: 5px 25px;
+    padding: 3.5px 25px;
     display: flex;
     align-items: center;
     justify-content: center;

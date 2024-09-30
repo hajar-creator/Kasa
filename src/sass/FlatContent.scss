@@ -1,8 +1,9 @@
 .flatContent {
-  margin: 50px 100px;
+  margin: 50px 100px 40px 100px;
   &__info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     &--text h1 {
       font-weight: 500;
       font-size: 36px;
@@ -12,14 +13,18 @@
     &--text p {
       font-size: 18px;
       font-weight: 500;
+      margin: 5px 0px 20px 0px;
+    }
+    &--host {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
     &--collapse {
       display: flex;
-      justify-content: space-between;
-      gap: 65px;
-    }
-    &--collapse div {
-      width: 100%;
+      margin-top: 20px;
+      gap: 70px;
     }
   }
 }

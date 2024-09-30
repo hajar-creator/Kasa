@@ -29,6 +29,19 @@ function Carrousel({ carrouselImgs }) {
     return <p>Aucune image n'est disponible</p>;
   }
 
+  //Si une seule image est présente
+  if (slideCount === 1) {
+    return (
+      <div className="carrousel">
+        <img
+          className="carrousel__img"
+          src={currentImg}
+          alt={`${currentSlide + 1}`}
+        />
+      </div>
+    );
+  }
+
   //Compteur d'images
   const imgCount = `${currentSlide + 1}/${slideCount}`;
 
