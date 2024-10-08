@@ -1,5 +1,6 @@
 import "../sass/Tags.scss";
 
+//Composant qui va afficher les tags reçus en prop
 function Tags({ tags }) {
   return (
     <div className="tags">

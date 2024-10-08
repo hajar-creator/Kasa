@@ -8,13 +8,18 @@ import Collapse from "./Collapse";
 import Stars from "./Stars";
 
 function FlatContent() {
+  //Récupération de l'id du logement depuis les paramètres de l'url
   const { id } = useParams();
+  //Recherche du logement correspondant à l'id dans les données importées
   const flat = data.find((flat) => flat.id === id);
 
+  //Si aucun logement ne correspond à l'id, redirection vers la page d'erreur
   if (!flat) {
     console.log(flat);
     return <Navigate to="*" />;
   }
+
+  //Si le logement est trouvé, affichage de son contenu
   return (
     <div className="flatContent">
       <Carrousel carrouselImgs={flat.pictures} />
