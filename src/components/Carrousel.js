@@ -59,13 +59,13 @@ function Carrousel({ carrouselImgs }) {
             className="carrousel__left"
             src={arrow_left}
             alt="flèche de gauche"
-            onClick={prevSlide}
+            onClick={nextSlide}
           />
           <img
             className="carrousel__right"
             src={arrow_right}
             alt="flèche de droite"
-            onClick={nextSlide}
+            onClick={prevSlide}
           />
         </>
       )}
